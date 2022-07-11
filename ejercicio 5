@@ -1,0 +1,15 @@
+Algoritmo tabla_multiplicar
+	// se definen variables 
+	Definir num1,numtt Como Entero
+	num1 <- 0
+	// entrada 
+	Escribir 'ingrese el numero'
+	Leer num1
+	// proceso 
+	Mientras c<12 Hacer
+		cm <- cm+1
+		numtt <- num1*cm
+		c <- c+1
+		Escribir num1,' x ',cm,' = ',numtt
+	FinMientras
+FinAlgoritmo
