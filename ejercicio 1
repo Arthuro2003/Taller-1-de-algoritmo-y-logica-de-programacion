@@ -1,0 +1,14 @@
+Algoritmo numero_par
+//	definimos las variables 
+	definir num Como Entero
+	num=0
+	//	entrada 
+	Escribir "ingrese un numero"
+	leer num
+	num= num mod 2
+	si num=0 entonces 
+		escribir "el numero es par"
+	sino 
+		escribir "el numero no es par"
+	FinSi
+FinAlgoritmo
