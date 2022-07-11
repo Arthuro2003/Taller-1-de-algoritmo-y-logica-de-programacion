@@ -1,0 +1,11 @@
+Algoritmo resultado_de_un_producto
+	// se definen variables
+	Definir num1,num2,r Como Entero
+	num1 <- 0; num2 <- 0; r <- 0
+	// entrada 
+	Escribir 'ingrese los numeros'
+	Leer num1
+	Leer num2
+	r <- num1*num2
+	Escribir 'el resultado es ',r
+FinAlgoritmo
