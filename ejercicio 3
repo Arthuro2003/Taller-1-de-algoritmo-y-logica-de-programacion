@@ -1,0 +1,14 @@
+Algoritmo numero_mayor
+	// se define variables
+	Definir num1,num2 Como Entero
+	num1 <- 0; num2 <- 0
+	// entrada 
+	Escribir 'ingrese el primer numeros y luego el segundo'
+	Leer num1
+	Leer num2
+	Si num1>num2 Entonces
+		Escribir 'el numero mayor es ',num1
+	SiNo
+		Escribir 'el numero mayor es ',num2
+	FinSi
+FinAlgoritmo
