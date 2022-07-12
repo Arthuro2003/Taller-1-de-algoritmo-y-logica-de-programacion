@@ -1,0 +1,12 @@
+Algoritmo ejercicio_7
+	// se definen las variables 
+	Definir n1,n2 Como Entero
+	n1 <- 0; n2 <- 0
+	// entrada y proceso 
+	Mientras n1>=0 Hacer
+		n2 <- n2+n1
+		Escribir 'ingrese los numeros'
+		Leer n1
+	FinMientras
+	Escribir 'la suma total es: ',n2
+FinAlgoritmo
