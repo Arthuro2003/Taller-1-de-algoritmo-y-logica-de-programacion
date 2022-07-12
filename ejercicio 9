@@ -1,0 +1,17 @@
+Algoritmo division_con_resta
+	// se definen variables 
+	Definir n1,n2,c Como Entero
+	n1 <- 0; n2 <- 0; c <- 0
+	// entrada 
+	Escribir 'ingrese el primer numero'
+	Leer n1
+	Escribir 'ingrese el segundo numero'
+	Leer n2
+	// proceso 
+	Mientras n1>=n2 Hacer
+		n1 <- n1-n2
+		c <- c+1
+	FinMientras
+	Escribir 'el cociente de la division es:',c
+	Escribir 'el resto de la division es:   ',n1
+FinAlgoritmo
