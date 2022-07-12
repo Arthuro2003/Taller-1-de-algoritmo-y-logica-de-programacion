@@ -1,0 +1,17 @@
+Algoritmo secuencia_30
+	// se definen las variables
+	Definir n1,n1tt,n2,n2tt,x Como Entero
+	n1 <- 0; n2 <- 0; n1tt <- 0; n2tt <- 1; c <- 1
+	// entrada 
+	Mientras x<30 Hacer
+		// se agrega un contador en la variable c
+		Escribir 'ingrese los numeros                ',c
+		Leer n1
+		n1tt <- n1tt+n1
+		n2tt <- n1*n2tt
+		c <- c+1
+		x <- x+1
+	FinMientras
+	Escribir 'el resultado de la suma es: ',n1tt
+	Escribir 'el resultado del producto:  ',n2tt
+FinAlgoritmo
