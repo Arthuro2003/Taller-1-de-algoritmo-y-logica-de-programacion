@@ -1,0 +1,15 @@
+Algoritmo F
+	// se definen las variables 
+	Definir n1,n2 Como Entero
+	Definir ff,lim Como Caracter
+	lim <- 'f'; n2 <- 1
+	Repetir
+		Escribir 'ingresa un numero'
+		Leer n1
+		Escribir 'ingrese f para finalizar'
+		Escribir 'ingrese c para continuar'
+		Leer ff
+		n2 <- n2*n1
+	Hasta Que (ff=lim)
+	Escribir 'el producto de los numeros es: ',n2
+FinAlgoritmo
