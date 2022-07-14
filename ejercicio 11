@@ -1,0 +1,21 @@
+Algoritmo secuencia_mayor
+	// se definen variables 
+	Definir n1,n2,n3,c Como Entero
+	n1 <- 0; n2 <- 0; c <- 1; n3 <- 0
+	// entrada 
+	Escribir 'ingrese la canditadad de numeros '
+	Leer n1
+	Mientras c<=n1 Hacer
+		Escribir 'ingrese numeros'
+		Leer n2
+		Si c=1 Entonces
+			n3 <- n2
+		SiNo
+			Si n2>n3 Entonces
+				n3 <- n2
+			FinSi
+		FinSi
+		c <- c+1
+	FinMientras
+	Escribir 'el numero mayor es: ',n3
+FinAlgoritmo
