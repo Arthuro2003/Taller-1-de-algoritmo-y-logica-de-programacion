@@ -1,0 +1,16 @@
+Algoritmo generador_entero
+	// se definen las variables 
+	Definir n1 Como Entero
+	n1 <- 2
+	// entrada 
+	Mientras n1<29 Hacer
+		n1 <- n1+3
+		Escribir '= ',n1
+		n3 <- n1
+		n2 <- n1 MOD 5
+		Si n2=0 Entonces
+			n4 <- n4+n3
+		FinSi
+	FinMientras
+	Escribir 'la suma de los numeros divisible para 5 son: ',n4
+FinAlgoritmo
