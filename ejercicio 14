@@ -1,0 +1,17 @@
+Algoritmo media
+	// se definen las variables 
+	Definir n1,n2,c Como Entero
+	n2 <- 1
+	// entrada
+	Mientras n2>0 Hacer
+		Escribir 'ingrese un numero(0 para finalizar)'
+		Leer n1
+		n2 <- n1
+		n3 <- n3+n1
+		Si n1<>0 Entonces
+			c <- c+1
+		FinSi
+	FinMientras
+	n3 <- n3/c
+	Escribir n3
+FinAlgoritmo
