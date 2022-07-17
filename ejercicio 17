@@ -1,0 +1,15 @@
+Algoritmo suma_lectura_par
+	// se definen vraibles 
+	Definir n1,n2,contador Como Entero
+	n1 <- 0; n2 <- 0; n3 <- 0; contador <- 1
+	// entrada 
+	Para c<-1 Hasta 30 Hacer
+		Escribir 'ingrese numeros            ',contador
+		Leer n2
+		Si (c MOD 2=0) Entonces
+			n3 <- n3+n2
+		FinSi
+		contador <- contador+1
+	FinPara
+	Escribir 'la suma total es: ',n3
+FinAlgoritmo
