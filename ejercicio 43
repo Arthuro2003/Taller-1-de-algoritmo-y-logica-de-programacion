@@ -1,0 +1,20 @@
+Algoritmo palindromo
+	Definir a,b,x Como Entero
+	Escribir 'escribe una palabra '
+	Leer palabra
+	b <- Longitud(palabra)
+	a <- 1
+	x <- 0
+	Mientras a<b Hacer
+		Si Subcadena(palabra,a,a)<>Subcadena(palabra,b,b) Entonces
+			x <- x+1
+		FinSi
+		a <- a+1
+		b <- b-1
+	FinMientras
+	Si x=0 Entonces
+		Escribir 'la palabra ',palabra,' es palindromo'
+	SiNo
+		Escribir 'la palabra ',palabra,' no es polindromo'
+	FinSi
+FinAlgoritmo
