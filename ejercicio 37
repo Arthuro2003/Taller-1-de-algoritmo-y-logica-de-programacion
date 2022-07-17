@@ -1,0 +1,47 @@
+Algoritmo ejercicio_44
+	Dimension A[4,5]
+	Definir A Como Entero
+	Definir fila Como Entero
+	Definir columna Como Entero
+	Dimension V[20]
+	Definir V Como Entero
+	Definir indice Como Entero
+	Definir intercambio Como Entero
+	Definir intermedio Como Entero
+	Definir saltador Como Entero
+	Para fila<-0 Hasta 3 Hacer
+		Para columna<-0 Hasta 4 Hacer
+			Escribir ('Introduce un número')
+			Leer A[fila,columna]
+		FinPara
+	FinPara
+	saltador <- 0
+	Para fila<-0 Hasta 3 Hacer
+		Para columna<-0 Hasta 4 Hacer
+			// V[((fila - 1) + 5) + columna] <- A[fila,columna]
+			V[columna+saltador]<-A[fila,columna]
+			Si columna MOD 5=0 Entonces
+				saltador <- saltador+5
+			FinSi
+		FinPara
+	FinPara
+	Repetir
+		intercambio <- 0
+		Para indice<-0 Hasta 18 Hacer
+			Si (V[indice]>V[indice+1]) Entonces
+				intermedio <- V[indice]
+				V[indice] <- V[indice+1]
+				V[indice+1]<-intermedio
+				intercambio <- 1
+			FinSi
+		FinPara
+	Hasta Que (intercambio=0)
+	Para fila<-0 Hasta 3 Hacer
+		Para columna<-0 Hasta 2 Hacer
+			A[fila,columna]<-V[((fila-1)*5)+columna]
+		FinPara
+	FinPara
+	Para fila<-0 Hasta 19 Hacer
+		Escribir V[fila]
+	FinPara
+FinAlgoritmo
