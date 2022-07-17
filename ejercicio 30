@@ -1,0 +1,25 @@
+Algoritmo vector_factorial
+	// se definen las variables 
+	Definir n,n1,n2 Como Entero
+	n1 <- 0; n2 <- 1; n3 <- 1
+	Dimension vector1[20],vector2[20]
+	// entrada 
+	Para n<-1 Hasta 20 Hacer
+		Escribir 'ingrese un numero    ',n
+		Leer vector1[n]
+	FinPara
+	Para n<-1 Hasta 20 Hacer
+		Si vector1[n]<0 Entonces
+			Escribir vector1[n],'no se puede factorial'
+		SiNo
+			Mientras n2<=vector1[n] Hacer
+				n3 <- n3*n2
+				n2 <- n2+1
+			FinMientras
+			vector2[n] <- n3
+		FinSi
+	FinPara
+	Para n<-1 Hasta 20 Hacer
+		Escribir vector1[n],'=',vector2[n]
+	FinPara
+FinAlgoritmo
