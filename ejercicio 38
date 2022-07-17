@@ -1,0 +1,30 @@
+Algoritmo vector_1_4_fila
+	Dimension A[4,5]
+	Definir intermedio Como Entero
+	Definir intercambio Como Entero
+	Definir fila Como Entero
+	Definir columna Como Entero
+	Definir A Como Entero
+	Para fila<-0 Hasta 3 Hacer
+		Para columna<-0 Hasta 4 Hacer
+			Escribir ('Introduce un número')
+			Leer A[fila,columna]
+		FinPara
+	FinPara
+	Repetir
+		intercambio <- 0
+		Para fila<-0 Hasta 3 Hacer
+			Para columna<-0 Hasta 2 Hacer
+				Si (A[fila,columna]>A[fila,columna+1]) Entonces
+					intermedio <- A[fila,columna]
+					A[fila,columna]<-A[fila,columna+1]
+					A[fila,columna+1]<-intermedio
+					intercambio <- 1
+				FinSi
+			FinPara
+		FinPara
+	Hasta Que (intercambio=0)
+	Para fila<-0 Hasta 3 Hacer
+		Escribir A[fila,columna]
+	FinPara
+FinAlgoritmo
