@@ -1,0 +1,23 @@
+Algoritmo n_mayor_posicion
+	// se definen las variables 
+	Definir nmayor,x,pos Como Entero
+	nmayor <- 0; pos <- 0
+	// entrada  
+	Dimension vector[20]
+	// proceso del Algoritmo
+	Para x<-1 Hasta 20 Hacer
+		Escribir 'ingrese un numero          ',x
+		Leer vector[x]
+	FinPara
+	Para x<-1 Hasta 20 Hacer
+		Si x=1 Entonces
+			nmayor <- vector[x]
+		SiNo
+			Si nmayor<vector[x] Entonces
+				nmayor <- vector[x]
+				pos <- x
+			FinSi
+		FinSi
+	FinPara
+	Escribir 'en la posicion ',pos,' numero mayor es: ',nmayor
+FinAlgoritmo
