@@ -1,0 +1,25 @@
+Algoritmo secuencia_menor_mayor_impar
+	// se definen las varianles 
+	Definir n1,n2,n3,x Como Entero
+	n1 <- 0; n2 <- 0; n3 <- 0; x <- 1
+	// entrada y proceso del Algoritmo 
+	Mientras n1<>-1 Hacer
+		Escribir 'ingrese un numero(-1 para finalizar)'
+		Leer n1
+		Si n1 MOD 2=0 Entonces
+			Si x=1 Entonces
+				n2 <- n1
+				x <- x+1
+			SiNo
+				Si n2>n1 Entonces
+					n2 <- n1
+				FinSi
+			FinSi
+			Si n3<n1 Entonces
+				n3 <- n1
+			FinSi
+		FinSi
+	FinMientras
+	Escribir 'el numero par mayor es: ',n3
+	Escribir 'el numero par menor es: ',n2
+FinAlgoritmo
