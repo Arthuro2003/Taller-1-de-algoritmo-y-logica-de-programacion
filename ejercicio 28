@@ -1,0 +1,28 @@
+Algoritmo vector_orden_A
+	// se definen las variables 
+	Definir n1,n2,a,tem Como Entero
+	n1 <- 0; n2 <- 0; a <- 0; tem <- 0
+	// entrada
+	Escribir 'ingrese la cantidad limite del vectorA'
+	Leer n1
+	Dimension vectorA[n1]
+	// proceso 
+	Para i<-1 Hasta n1 Hacer
+		Escribir 'ingrese numero en vector A'
+		Leer vectorA[i]
+	FinPara
+	// proceso burbuja 
+	Para i<-1 Hasta n1-1 Hacer
+		Para a<-1 Hasta n1-1 Hacer
+			Si vectorA[a]>vectorA[a+1] Entonces
+				tem <- vectorA[a]
+				vectorA[a] <- vectorA[a+1]
+				vectorA[a+1]<-tem
+			FinSi
+		FinPara
+	FinPara
+	// fin de proceso de burbuja 
+	Para i<-1 Hasta n1 Hacer
+		Escribir vectorA[i]
+	FinPara
+FinAlgoritmo
