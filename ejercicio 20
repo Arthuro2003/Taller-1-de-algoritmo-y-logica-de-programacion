@@ -1,0 +1,21 @@
+Algoritmo secuencia_primo
+	// definir variable
+	Definir a,num,cont Como Entero
+	num <- 0; cont <- 0; a <- 1; c <- 1
+	// entrada y proceso de Algoritmo 
+	Mientras c<=30 Hacer
+		Escribir 'ingrese un numero entero        ',c
+		Leer num
+		Mientras a<=num Hacer
+			Si num MOD a=0 Entonces
+				cont <- cont+1
+			FinSi
+			a <- a+1
+		FinMientras
+		Si cont=2 Entonces
+			n1 <- n1+num
+		FinSi
+		c <- c+1
+	FinMientras
+	Escribir 'la suma total de los numeros primos es: ',n1
+FinAlgoritmo
