@@ -1,0 +1,19 @@
+Algoritmo secuencia_sumaymultiplo_5
+	// se definen las variables 
+	Definir n1,suma,pro Como Entero
+	n1 <- 0; pro <- 1; suma <- 0
+	// entrada y proceso de algoritmo 
+	Mientras n1<>-1 Hacer
+		// finaliza el proceso del algoritmo al introducir -1
+		Escribir 'ingrese numeros(-1 para finalizar)'
+		Leer n1
+		Si (n1 MOD 2=0) Entonces
+			suma <- suma+n1
+		FinSi
+		Si (n1 MOD 5=0) Entonces
+			pro <- pro*n1
+		FinSi
+	FinMientras
+	Escribir 'la suma total es: ',suma
+	Escribir 'el producto final es: ',pro
+FinAlgoritmo
