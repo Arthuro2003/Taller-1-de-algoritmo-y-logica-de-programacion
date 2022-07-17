@@ -1,0 +1,19 @@
+Algoritmo secuencia_factorial
+	// definimos variables 
+	Definir num1,num2,fac,c Como Entero
+	num1 <- 0; num2 <- 1; fac <- 1; c <- 1
+	// entrada y proceso de Algoritmo 
+	Mientras c<=30 Hacer
+		Escribir 'ingresa un numero entero          ',c
+		Leer num1
+		Si num1>=0 Entonces
+			Mientras num2<=num1 Hacer
+				fac <- fac*num2
+				num2 <- num2+1
+			FinMientras
+			ttfac <- ttfac+fac
+			c <- c+1
+		FinSi
+	FinMientras
+	Escribir 'la suma total de los factoriales es: ',ttfac
+FinAlgoritmo
