@@ -1,0 +1,21 @@
+Algoritmo vector_A_B_mayor_C
+	// se definen las variables 
+	Definir n1 Como Entero
+	n1 <- 0
+	Dimension vectorA[15],vectorB[15],vectorC[15]
+	// entrada y proceso 
+	Para i<-1 Hasta 15 Hacer
+		Escribir 'ingrese numero en vector A     ',i
+		Leer vectorA[i]
+		Escribir 'ingrese numero en vector B     ',i
+		Leer vectorB[i]
+		vectorC[i] <- vectorA[i]+vectorB[i]
+		Si vectorC[i]>n1 Entonces
+			n1 <- vectorC[i]
+		FinSi
+	FinPara
+	Para i<-1 Hasta 15 Hacer
+		Escribir 'vectorA(',i,')+vectorB(',i,')=',vectorC[i]
+	FinPara
+	Escribir 'el numero mayor de vectorC es: ',n1
+FinAlgoritmo
