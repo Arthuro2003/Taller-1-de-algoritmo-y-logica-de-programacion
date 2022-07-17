@@ -1,0 +1,27 @@
+Algoritmo multiplo_5y3
+	// se definen las variables 
+	Definir n1 Como Entero
+	n1 <- 0; n4 <- 1
+	// entrada 
+	Mientras n1<>-1 Hacer
+		Escribir 'ingrese numeros(-1 para finalizar)'
+		Leer n1
+		Si n1 MOD 3=0 Entonces
+			Si n4=1 Entonces
+				n4 <- n4+1
+				n2 <- n1
+			SiNo
+				Si n1<n2 Entonces
+					n2 <- n1
+				FinSi
+			FinSi
+		FinSi
+		Si n1 MOD 5=0 Entonces
+			Si n1>n3 Entonces
+				n3 <- n1
+			FinSi
+		FinSi
+	FinMientras
+	Escribir 'el numero mayor de los multiplos de 5 es: ',n3
+	Escribir 'el numero menor de los multiplos de 3 es: ',n2
+FinAlgoritmo
