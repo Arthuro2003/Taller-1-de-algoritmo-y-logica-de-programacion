@@ -1,0 +1,23 @@
+Algoritmo vector_A_par
+	// se definen las variables 
+	Definir n1 Como Entero
+	Dimension vector[20]
+	n1 <- 0
+	// entrada 
+	Para i<-1 Hasta 20 Hacer
+		Escribir 'ingrese digitos'
+		Leer vector[i]
+	FinPara
+	Para i<-1 Hasta 20 Hacer
+		Si i MOD 2=0 Entonces
+			n2 <- n2+vector[i]
+		FinSi
+		Si i MOD 3=0 Entonces
+			Si vector[i]>n3 Entonces
+				n3 <- vector[i]
+			FinSi
+		FinSi
+	FinPara
+	Escribir 'la suma total es: ',n2
+	Escribir 'el numero impar mayor es :',n3
+FinAlgoritmo
