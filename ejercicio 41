@@ -1,0 +1,14 @@
+Algoritmo numero_de_palabras
+	Definir frase Como Caracter
+	Definir espacios,i,cantidad Como Entero
+	espacios <- 0; i <- 0
+	Escribir 'dime una frase'
+	Leer frase
+	cantidad <- Longitud(frase)
+	Para i<-0 Hasta cantidad-1 Hacer
+		Si Subcadena(frase,i,i)=' ' Entonces
+			espacios <- espacios+1
+		FinSi
+	FinPara
+	Escribir 'la frase tiene ',espacios+1,' palabras. '
+FinAlgoritmo
