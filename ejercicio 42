@@ -1,0 +1,15 @@
+Algoritmo palabra_mayor
+	Definir txt Como Caracter
+	Definir chr Como Caracter
+	Definir contador Como Entero
+	contador <- 0
+	Escribir 'ingrese una frase'
+	Leer txt
+	Para i<-1 Hasta Longitud(txt) Hacer
+		chr <- Subcadena(txt,i,i)
+		Si chr<>' ' Entonces
+			contador <- contador+1
+		FinSi
+	FinPara
+	Escribir 'cantidad de letras ',contador
+FinAlgoritmo
