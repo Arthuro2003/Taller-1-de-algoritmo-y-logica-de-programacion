@@ -1,0 +1,41 @@
+Algoritmo suma_matriz_A_B
+	// se definen las variables 
+	Definir i,j,matrizA,matrizB,matrizC Como Entero
+	Dimension matrizA[3,3],matrizB[3,3],matrizC[3,3]
+	//	entrada y proceso del algoritmo 
+	Escribir 'MATRIZ A'
+	Para i<-1 Hasta 3 Hacer
+		Para j<-1 Hasta 3 Hacer
+			Escribir 'ingrese los valores de la matriz A para [',i,'] [',j,']'
+			Leer matrizA[i,j]
+		FinPara
+	FinPara
+	Escribir 'MATRIZ B'
+	Para i<-1 Hasta 3 Hacer
+		Para j<-1 Hasta 3 Hacer
+			Escribir 'ingrese los valores de la matriz A para [',i,'] [',j,']'
+			Leer matrizB[i,j]
+		FinPara
+	FinPara
+	Para i<-1 Hasta 3 Hacer
+		Para j<-1 Hasta 3 Hacer
+			Escribir '[',matrizA[i,j],']' Sin Saltar
+		FinPara
+		Escribir ''
+	FinPara
+	Escribir '   +     '
+	Para i<-1 Hasta 3 Hacer
+		Para j<-1 Hasta 3 Hacer
+			Escribir '[',matrizB[i,j],']' Sin Saltar
+		FinPara
+		Escribir ''
+	FinPara
+	Escribir '   =    '
+	Para i<-1 Hasta 3 Hacer
+		Para j<-1 Hasta 3 Hacer
+			matrizC[i,j]<-matrizA[i,j]+matrizB[i,j]
+			Escribir '[',matrizC[i,j],']' Sin Saltar
+		FinPara
+		Escribir ''
+	FinPara
+FinAlgoritmo
