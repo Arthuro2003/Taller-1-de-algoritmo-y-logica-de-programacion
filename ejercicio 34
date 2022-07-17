@@ -1,0 +1,57 @@
+Algoritmo mayor_menor_i_j
+	// se definen las variables 
+	Definir matriz,n Como Entero
+	n <- 0
+	Dimension matriz[3,3]
+	// entrada 
+	Para i<-1 Hasta 3 Hacer
+		Para j<-1 Hasta 3 Hacer
+			Escribir 'ingresa un numero fila [',i,'] ','columna',' [',j,']'
+			Leer matriz[i,j]
+		FinPara
+		Escribir ''
+	FinPara
+	Escribir 'matriz'
+	Para i<-1 Hasta 3 Hacer
+		Para j<-1 Hasta 3 Hacer
+			Escribir '[',matriz[i,j],']' Sin Saltar
+		FinPara
+		Escribir ''
+	FinPara
+	Para i<-1 Hasta 3 Hacer
+		n <- 0
+		Para j<-1 Hasta 3 Hacer
+			Si n<matriz[i,j] Entonces
+				n <- matriz[i,j]
+			FinSi
+		FinPara
+		Escribir 'el mayor de la fila ',i,' es= ',n
+	FinPara
+	Para j<-1 Hasta 3 Hacer
+		n <- 0
+		Para i<-1 Hasta 3 Hacer
+			Si n<matriz[i,j] Entonces
+				n <- matriz[i,j]
+			FinSi
+		FinPara
+		Escribir 'el mayor de la columna ',j,' es= ',n
+	FinPara
+	Para i<-1 Hasta 3 Hacer
+		n2 <- 100
+		Para j<-1 Hasta 3 Hacer
+			Si n2>matriz[i,j] Entonces
+				n2 <- matriz[i,j]
+			FinSi
+		FinPara
+		Escribir 'el menor de la fila ',i,' es= ',n2
+	FinPara
+	Para j<-1 Hasta 3 Hacer
+		n2 <- 100
+		Para i<-1 Hasta 3 Hacer
+			Si n2>matriz[i,j] Entonces
+				n2 <- matriz[i,j]
+			FinSi
+		FinPara
+		Escribir 'el menor de la columna ',j,' es= ',n2
+	FinPara
+FinAlgoritmo
