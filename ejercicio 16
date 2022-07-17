@@ -1,0 +1,19 @@
+	// se definen las variables 
+	Definir n1 Como Entero
+	n1 <- 0
+	// entrada 
+	Escribir 'ingrese la cantidad de numeros a sumar'
+	Leer n1
+	// proceso 
+	Mientras c<n1 Hacer
+		Escribir 'ingrese numeros'
+		Leer n2
+		n3 <- n2 MOD 2
+		Si n3=0 Entonces
+			Escribir '= ',n4,'+ ',n2
+			n4 <- n4+n2
+		FinSi
+		c <- c+1
+	FinMientras
+	Escribir 'suma total = ',n4
+FinAlgoritmo
