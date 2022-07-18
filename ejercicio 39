@@ -1,0 +1,19 @@
+Algoritmo vector_primo
+	Dimension A[20]
+	Definir A Como Entero
+	Definir indice Como Entero
+	Definir indice1 Como Entero
+	Para indice<-1 Hasta 20 Hacer
+		Escribir ('Introduce un número')
+		Leer A[indice]
+	FinPara
+	Para indice<-1 Hasta 20 Hacer
+		indice1 <- 2
+		Mientras (indice1<A[indice]) Y (A[indice] MOD indice1<>0) Hacer
+			indice1 <- indice1+1
+		FinMientras
+		Si (indice1=A[indice]) Entonces
+			Escribir A[indice],(' es primo')
+		FinSi
+	FinPara
+FinAlgoritmo
