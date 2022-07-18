@@ -1,0 +1,27 @@
+Algoritmo buscar_conjunto
+	//	se definen las variables 
+	Definir x,n1,n2,res Como Entero
+	x=0;n1=0;n2=0;res=0
+	x <- 0
+	//	estrada 
+	Escribir 'Cuantos numeros desea ingresar: '
+	Leer n1
+	Dimension vec[n1]
+	//	proceso 
+	Para i<-1 Hasta n1 Hacer
+		Escribir 'Dame un numero: '
+		Leer n2
+		x <- x+1
+		vec[x] <- n2
+	FinPara
+	Escribir 'Dame el numero a buscar: '
+	Leer num
+	Para i<-1 Hasta n1 Hacer
+		Si num=vec[i] Entonces
+			res <- vec[i]
+			Escribir 'El numero ',res,' si se encuentra en el conjunto'
+		SiNo
+			Escribir 'el numero no se encuentra en el conjunto '
+		FinSi
+	FinPara
+FinAlgoritmo
